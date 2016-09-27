@@ -58,5 +58,6 @@ node default {
 
 #include skeleton
 #}
+include skeleton
 include memcached
 }
