@@ -43,7 +43,7 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "Hello, my name is ${::hostname}": }
-}
+#}
 #file {'/etc/motd':
 #  ensure => file,
 #  owner => 'root',
@@ -55,3 +55,4 @@ node default {
     path => '/usr/bin:/usr/local/bin',
      creates => '/etc/motd',
   }
+}
