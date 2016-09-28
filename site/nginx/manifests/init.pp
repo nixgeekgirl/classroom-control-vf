@@ -58,9 +58,6 @@ content => epp('nginx/default.conf.epp',
 docroot => $docroot,
 }),
 notify => Service['nginx'],
-Homework 15.2: Proposed Solution
-VirtualFundamentals v1.0.4 26 ©2016 Puppet, Inc.
-notify => Service['nginx'],
 }
 service { 'nginx':
 ensure => running,
