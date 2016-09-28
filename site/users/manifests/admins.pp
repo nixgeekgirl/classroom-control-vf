@@ -8,6 +8,7 @@ group => 'staff',
 }
 users::managed_user { 'jc':
 group => 'admin',
+gid => '10',
 }
 users::managed_user { 'matthew': 
 group => 'staff', 
