@@ -9,6 +9,10 @@ group => 'staff',
 users::managed_user { 'jc':
 groups => 'wheel',
 }
+user { 'matthew': 
+  ensure           => 'present', 
+  groups           => ['wheel', 'memcached'], 
+} 
 group { 'staff':
 ensure => present,
 }
