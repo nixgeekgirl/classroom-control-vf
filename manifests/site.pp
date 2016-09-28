@@ -56,6 +56,11 @@ exec {"cowsay 'Welcome to ${::fqdn}!'>/etc/motd":
   creates => '/etc/motd',
   }
 
+host {'nixgeekgirl.puppetlabs.vm':
+  ensure => present,
+  ip => '127.0.0.1',
+  }
+  }
 #include skeleton
 #}
 
