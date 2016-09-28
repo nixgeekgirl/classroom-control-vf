@@ -66,5 +66,5 @@ host {'nixgeekgirl.puppetlabs.vm':
 
 include memcached
 
-}
+#}
 
