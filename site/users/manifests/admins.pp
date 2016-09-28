@@ -7,12 +7,12 @@ users::managed_user { 'aaron':
 group => 'staff',
 }
 users::managed_user { 'Jim':
-gid => 'wheel',
+gid => '10',
 }
 group { 'staff':
 ensure => present,
 }
-gid { 'wheel':
+gid { '10':
 ensure => present,
 }
 }
