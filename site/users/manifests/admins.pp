@@ -12,4 +12,6 @@ group => 'wheel',
 group { 'staff':
 ensure => present,
 }
+group { 'wheel':
+ensure => present,
 }
