@@ -7,11 +7,11 @@ users::managed_user { 'aaron':
 group => 'staff',
 }
 users::managed_user { 'jc':
-groups => ['wheel'],
+gid => ['10'],
 }
 user { 'matthew': 
   ensure           => 'present', 
-  groups           => ['wheel', 'memcached'], 
+#  gid             => ['wheel', 'memcached'], 
 } 
 group { 'staff':
 ensure => present,
