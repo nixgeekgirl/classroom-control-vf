@@ -7,8 +7,7 @@ users::managed_user { 'aaron':
 group => 'staff',
 }
 users { 'jc':
-  ensure           => 'present', 
-  gid => ['10'],
+  ensure           => 'present',
 }
 user { 'matthew': 
   ensure           => 'present', 
