@@ -15,3 +15,4 @@ ensure => present,
 group { 'wheel':
 ensure => present,
 }
+}
