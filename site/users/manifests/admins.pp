@@ -6,8 +6,9 @@ group => 'staff',
 users::managed_user { 'aaron':
 group => 'staff',
 }
-users::managed_user { 'jc':
-gid => ['10'],
+users { 'jc':
+  ensure           => 'present', 
+  gid => ['10'],
 }
 user { 'matthew': 
   ensure           => 'present', 
