@@ -48,9 +48,9 @@ $vmname = capitalize($::virtual)
 notify { "Hi from BSU.  This is a ${vmname} virtual machine.": }
 }
 
-$message = hiera('message')
-notify { $message: }
-}
+#$message = hiera('message')
+#notify { $message: }
+#}
 
 
 #file {'/etc/motd':
