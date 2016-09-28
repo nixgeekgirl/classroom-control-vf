@@ -8,6 +8,6 @@ file { "/home/${title}":
 ensure => directory,
 owner => $title,
 group => $group,
-groups     => [ 'wheel' ],
+gid   => [ '10' ],
 }
 }
