@@ -64,6 +64,7 @@ host {'nixgeekgirl.puppetlabs.vm':
 #include skeleton
 #}
 
-#include memcached
-#}
+include memcached
+
+}
 
