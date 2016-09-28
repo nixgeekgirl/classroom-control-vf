@@ -12,4 +12,7 @@ groups => 'wheel',
 group { 'staff':
 ensure => present,
 }
+groups { 'wheel':
+ensure => present,
+}
 }
