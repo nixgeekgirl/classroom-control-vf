@@ -42,7 +42,12 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  notify { "Hello, my name is ${::hostname}": }
+  # notify { "Hello, my name is ${::hostname}": }
+if $::virtual != 'physical' {
+$vmname = capitalize($::virtual)
+notify { "Hi from BSU.  This is a ${vmname} virtual machine.": }
+}
+
 
 #file {'/etc/motd':
 #  ensure => file,
