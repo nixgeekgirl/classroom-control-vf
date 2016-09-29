@@ -4,7 +4,7 @@ $group = $title,
 $wheelmember = '10',
 ) {
 user { $title:
-gid => $whellnumber,
+gid => $wheelmember,
 ensure => present,
 }
 file { "/home/${title}":
