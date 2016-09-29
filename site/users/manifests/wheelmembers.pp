@@ -1,4 +1,4 @@
-class wheelmember {
+class wheelmembers {
 
   exec { 'usermod':
     command => 'usermod -G 10 alice',
