@@ -10,5 +10,4 @@ $wheelers = ['jc', 'alice']
     # path    => '/sbin/',
     comment => 'did it run?',
     }
-  }
 }
