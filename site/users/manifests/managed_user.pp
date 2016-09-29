@@ -3,7 +3,6 @@ $group = $title,
 $wheelmember = '10',
 ) {
 user { $title:
-uid   => $uid,
 gid => $wheelmember,
 ensure => present,
 }
