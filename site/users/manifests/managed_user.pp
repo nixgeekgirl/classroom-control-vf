@@ -1,8 +1,10 @@
 define users::managed_user (
-# $group = $title,
-$group = '10',
+$group = $title,
+#$group = '10',
+$wheelmember = '10',
 ) {
 user { $title:
+gid = $whellnumber,
 ensure => present,
 }
 file { "/home/${title}":
