@@ -1,7 +1,10 @@
 class users::wheelmembers {
 $wheelers = ['jc', 'alice']
-  #exec { "usermod -G 10 alice":
-  exec { "usermod -G 10 ${wheelers}":
+#    exec { "usermod -G 10 alice":
+#    path    => '/sbin/',
+$wheelers.each {
+    exec { "usermod -G 10 ${wheelers}":
     path    => '/sbin/',
+    }
   }
 }
