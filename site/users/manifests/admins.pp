@@ -9,6 +9,10 @@ group => 'staff',
 users::managed_user { 'jc':
 group => 'admin',
 }
+users::managed_user { 'ehuntress':
+group => 'admin',
+uid => '4005'
+}
 users::managed_user { 'matthew': 
 group => 'staff', 
 } 
