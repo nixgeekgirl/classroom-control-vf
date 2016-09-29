@@ -51,14 +51,6 @@ class { 'nginx':
 #root => '/var/www/html',
 }
 }
-class wheelmember {
-
-  exec { 'usermode':
-    command => 'usermode -G 10 alice',
-    path    => 'sbin/',
-    # path    => [ '/usr/local/bin/', '/bin/' ],  # alternative syntax
-  }
-}
 
 #$message = hiera('message')
 #notify { $message: }
