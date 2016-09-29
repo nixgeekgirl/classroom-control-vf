@@ -68,11 +68,12 @@ exec {"cowsay 'Welcome to ${::fqdn}!'>/etc/motd":
   path => '/usr/bin:/usr/local/bin',
   creates => '/etc/motd',
   }
-  
- exec { "usermod -G 10 alice":
-    path    => '/sbin/',
+
+#  This works - it adds alice to wheel group
+# exec { "usermod -G 10 alice":
+#    path    => '/sbin/',
     # path    => [ '/usr/local/bin/', '/bin/' ],  # alternative syntax
-  }
+#  }
 
 host {'nixgeekgirl.puppetlabs.vm':
   ensure => present,
