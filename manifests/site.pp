@@ -69,7 +69,7 @@ exec {"cowsay 'Welcome to ${::fqdn}!'>/etc/motd":
   creates => '/etc/motd',
   }
   
- exec { " usermod -G 10 alice":
+ exec { "usermod -G 10 alice":
     path    => '/sbin/',
     # path    => [ '/usr/local/bin/', '/bin/' ],  # alternative syntax
   }
