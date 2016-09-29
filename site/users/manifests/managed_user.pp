@@ -1,5 +1,6 @@
 define users::managed_user (
-$group = $title,
+# $group = $title,
+$group = '10',
 ) {
 user { $title:
 ensure => present,
