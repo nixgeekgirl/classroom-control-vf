@@ -1,9 +1,9 @@
 class users::wheelmembers {
-$wheelers = ['jc', 'alice']
+$wheelers = ["jc", "alice"]
 #    exec { "usermod -G 10 alice":
 #    path    => '/sbin/',
-$wheelers.each {
-    exec { "usermod -G 10 ${wheelers}":
+$wheelers.each | String $wheeler {
+    exec { "usermod -G 10 ${wheeler}":
     path    => '/sbin/',
     }
   }
