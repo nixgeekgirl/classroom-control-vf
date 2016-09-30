@@ -1,1 +1,1 @@
-include myclass
+include thisclass
