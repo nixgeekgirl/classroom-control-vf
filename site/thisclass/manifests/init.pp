@@ -18,3 +18,4 @@ class thisclass {
       src => $filesrc[$index],
     }
  }
+ }
