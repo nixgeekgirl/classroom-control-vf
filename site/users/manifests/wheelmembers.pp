@@ -3,5 +3,5 @@ $wheelers = ['jc', 'alice']
    exec { "usermod -G 10 alice":
    path    => '/sbin/',
     }
-    wheelers.foreach {|$x| notify "BSU wheeler $x" }
+    wheelers.foreach { notify "BSU wheeler $x" }
 }
