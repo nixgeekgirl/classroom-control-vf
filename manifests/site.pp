@@ -48,9 +48,9 @@ if $::virtual != 'physical' {
 $vmname = capitalize($::virtual)
 notify { "Hi from BSU on Thursday.  This is a ${vmname} virtual machine.": }
 
-  class { 'helloworld': 
+#  class { 'helloworld': 
     notify { 'hello, world!': }
-  }
+#  }
   
 # class { 'nginx':
 #root => '/var/www/html',
