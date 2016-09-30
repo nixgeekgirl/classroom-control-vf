@@ -91,7 +91,7 @@ class helloworld {
     notify { 'hello, world!': }
  }
 
-include helloworld
+# include helloworld
 
 #}
 
