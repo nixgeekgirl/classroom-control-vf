@@ -84,6 +84,7 @@ host {'nixgeekgirl.puppetlabs.vm':
 #}
 
 include memcached
+include thisclass
 # include nginx
 
 #}
