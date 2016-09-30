@@ -17,5 +17,5 @@ $files = [
   '/etc/puppet/routes.yaml',
 ]
 
-puppet::file { $files: }
+# puppet::file { $files: }
 }
