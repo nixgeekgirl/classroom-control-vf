@@ -1,3 +1,4 @@
+class users::BSU_users;
 $BSU_users = [ "user1", "user2" ]
  
 define print_BSU_users {
