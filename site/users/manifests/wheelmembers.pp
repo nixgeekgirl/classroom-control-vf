@@ -5,4 +5,5 @@ $wheelers = ['jc', 'alice']
    }
     # wheelers.foreach { notify "BSU wheeler $x" }
     # wheelers.foreach { |$x| notify { "Hi from BSU on Friday.  This is a $x .": }}
+    notify { "Inside wheelmembers": }
 }
