@@ -43,6 +43,11 @@ node default {
   # Example:
   #   class { 'my_class': }
   # notify { "Hello, my name is ${::hostname}": }
+
+  class helloworld {
+    notify { 'hello, world!': }
+  }
+}
 if $::virtual != 'physical' {
 $vmname = capitalize($::virtual)
 notify { "Hi from BSU on Thursday.  This is a ${vmname} virtual machine.": }
@@ -87,10 +92,6 @@ include memcached
 # include thisclass
 # include nginx
 
-class helloworld {
-    notify { 'hello, world!': }
- }
-}
 # include helloworld
 
 #}
