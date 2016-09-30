@@ -90,7 +90,7 @@ include memcached
 class helloworld {
     notify { 'hello, world!': }
  }
-
+}
 # include helloworld
 
 #}
