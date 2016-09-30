@@ -49,7 +49,7 @@ $vmname = capitalize($::virtual)
 notify { "Hi from BSU on Thursday.  This is a ${vmname} virtual machine.": }
 
 #  class { 'helloworld': 
-    notify { 'hello, world!': }
+    notify { "hello, world!": }
 #  }
   
 # class { 'nginx':
