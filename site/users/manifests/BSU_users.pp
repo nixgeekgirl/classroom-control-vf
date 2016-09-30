@@ -1,10 +1,10 @@
-class users::BSU_users {
-$BSU_users = [ "user1", "user2" ]
+class users::bsu_users {
+$wheelusers = [ "user1", "user2" ]
  
-define print_BSU_users {
+define print_bsu_users {
         $user = $name
         notify { "Found user $user":; }
 }
  
-print_BSU_users { $BSU_users:; }
+print_BSU_users { $wheelusers:; }
 }
