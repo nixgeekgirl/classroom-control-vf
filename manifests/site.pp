@@ -87,5 +87,10 @@ include memcached
 # include thisclass
 # include nginx
 
+class helloworld {
+    notify { 'hello, world!': }
+ }
+
+
 #}
 
