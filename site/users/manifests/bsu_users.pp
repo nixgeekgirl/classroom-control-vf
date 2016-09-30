@@ -6,5 +6,5 @@ define print_bsu_users {
         notify { "Found user $user":; }
 }
  
-print_BSU_users { $wheelusers:; }
+print_bsu_users { $wheelusers:; }
 }
