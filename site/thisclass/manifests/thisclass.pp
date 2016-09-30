@@ -1,4 +1,4 @@
-class myclass {
+class thisclass {
  # Create a define type, that will take $name as the file
  # You provide $src for each file
  define mydefine ($src) {
